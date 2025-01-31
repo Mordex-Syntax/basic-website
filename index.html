@@ -108,6 +108,35 @@
         footer a:hover {
             text-decoration: underline;
         }
+
+        /* Estilos para el álbum de hobbies */
+        #album-hobbies {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .hobby {
+            margin-bottom: 40px;
+        }
+
+        .hobby img {
+            width: 80%; /* Ajusta el tamaño de las imágenes */
+            max-width: 600px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        .hobby h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .hobby p {
+            font-size: 16px;
+            color: #ddd;
+            max-width: 800px;
+            margin: 0 auto;
+        }
     </style>
 </head>
 <body>
@@ -116,14 +145,15 @@
     <header>
         <div class="banner">Mordex Syntax</div>
         <div class="nav-buttons">
-            <a href="#sobre-mi" class="nav-button">Sobre Mí</a>
+            <a href="#sobre-mi" class="nav-button">Sobre mi</a>
             <a href="#trabajos" class="nav-button">Trabajos</a>
+            <a href="#hobbies" class="nav-button">Hobbies</a>
         </div>
     </header>
 
     <!-- Nuevo texto de introducción -->
     <section>
-        <h1>Bienvenidos</h1>
+        <h1>Bienvenidos</h1><br>
         <p>Bienvenidos a mi pequeña website describiendo un poco sobre mi persona, el tema usado fueron el tema de colores mate black and grey que usualmente uso en github y codepen asi que lo tome de referencia mas el formato base con los headers y footers con su respectivo diseño para que sea comodo y minimalista, sin nada mas que agregar puedes leer mi pequeña biografia.</p>
     </section>
 
@@ -133,7 +163,7 @@
     <!-- Sección "Sobre Mí" con texto de Lorem Ipsum -->
     <section id="sobre-mi">
        <h1>Sobre Mí</h1><br>
-    <p>Me considero una persona apasionada por las nuevas tecnologías, aunque soy algo vago cuando no me llama mucho la atención algo. Mis pasatiempos incluyen programar juegos en Roblox Studio con amigos de otros países, escuchar música con buen ritmo (como Cake - The Distance, Jamiroquai - Virtual Insanity, Justice - D.A.N.C.E), y también participar en CTFs en Hacktoria y HackThisSite.</p><br>
+    <p>Mi nombre es Jesus Emilson Rivera Carias, actualmente tengo 19 años y me dedique de forma mas activa en informatica desde el 2019 y desde entonces soy un aficionado a las nuevas tecnologias.</p><br>
         
     <p>Mi objetivo profesional es obtener mi título como ingeniero y seguir aprendiendo más para conseguir un trabajo en áreas como ciberseguridad o desarrollo web. Me considero una persona con capacidad analítica para la resolución de problemas, y lo que más me define es que nunca dejo algo por difícil que sea, ya que mientras más difícil es, más dulce es la victoria.</p>
     </section>
@@ -145,12 +175,33 @@
     <section id="trabajos">
 
     <h1>Mis Trabajos</h1><br>
-    <p>En mis proyectos recientes, he trabajado en dos juegos llamados *Hunters Of Blood* y *DI3 H4RD*. Son shooters en formato roguelike y top-down shooter, respectivamente, ambos en acceso anticipado y gratuitos. Además, soy parte de un grupo de ciberseguridad llamado *DeadsecX*, que se encarga de ayudar a personas que reciben amenazas sin cobrarles, ayudándolas con sus casos.</p><br>
-    <p>También estoy desarrollando *Trans Am 1.0*, un Lampyre gratuito y open source que subiré a GitHub para la comunidad de OSINT, para que aquellas personas que no puedan costear el Lampyre puedan usarlo para sus investigaciones.</p><br>
-    <p>Trabajo como full stack developer y he realizado proyectos como sistemas de ventas a precios bajos para ayudar a otros. Uno de mis mayores logros ha sido ser invitado a varios grupos de ciberseguridad desde 2021 para colaborar en proyectos.</p><br>
+    <p>En mis proyectos recientes, he trabajado en dos juegos llamados Hunters Of Blood y DI3 H4RD. Son shooters en formato roguelike y top-down shooter, respectivamente, ambos en acceso anticipado y gratuitos. Además soy parte de un grupo de ciberseguridad llamado DeadsecX, que se encarga de ayudar a personas que reciben amenazas sin cobrarles ayudándolas con sus casos.</p><br>
+    <p>También estoy desarrollando *Trans Am 1.0*, un Lampyre gratuito y open source que subiré a GitHub para la comunidad de OSINT, para que aquellas personas que no puedan costear el Lampyre original puedan usar mi version como substituto para sus investigaciones.</p><br>
+    <p>Trabajo como full stack developer y he realizado proyectos como sistemas de ventas a precios absurdamente bajos para ayudar a otros. Uno de mis mayores logros ha sido ser invitado a varios grupos de ciberseguridad desde 2021 para colaborar en proyectos.</p><br>
     <p>Las herramientas que más utilizo son Google y el inglés, ya que me permiten consultar y aprender de otros desarrolladores en entrevistas o foros.</p><br>
-</section>
+    </section>
 
+    <!-- Segundo separador -->
+    <div class="separator"></div>
+
+    <!-- Sección de Hobbies -->
+    <section id="hobbies">
+        <h1>Mis Hobbies Favoritos</h1>
+        <div class="hobby">
+            <h2>Programar Juegos en Roblox Studio</h2>
+            <img src="https://tr.rbxcdn.com/180DAY-a97cddc3c8a0ca6c1ed10290c2733006/768/432/Image/Png/noFilter" alt="Juego en Roblox Studio">
+            <p>Portada de mi juego Hunters Of Blood.</p>
+        </div>
+        <div class="hobby">
+            <h2>Escuchar Música con Buen Ritmo</h2>
+            <img src="https://www.hetplaathuis.nl/wp-content/uploads/2018/04/CM-Cake-The-Distance-cd-Uk-1997-RH200.jpg" alt="Música">
+            <p>Disfruto de música con buen ritmo, como Cake - The Distance, Jamiroquai - Virtual Insanity y Justice - D.A.N.C.E. Me ayuda a concentrarme y mantenerme motivado.</p>
+        </div>
+        <div class="hobby">
+            <h2>Participar en CTFs</h2>
+            <img src="https://avatars.githubusercontent.com/u/117226809?s=200&v=4" alt="CTF">
+            <p>La ciberseguridad es uno de mis intereses principales. Participar en CTFs en plataformas como Hacktoria y HackThisSite me desafía a resolver problemas y mejorar mis habilidades técnicas.</p>
+        </div>
     </section>
 
     <!-- Footer -->
