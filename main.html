@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        body {
+            background-color: #2E2E2E; /* Gris oscuro pero no demasiado */
+            color: white;
+            text-align: center;
+            padding-top: 80px; /* Evita que el contenido quede oculto detrás del header */
+            min-height: 100vh; /* Asegura que el body ocupe al menos la altura completa de la ventana */
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Encabezado superior */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #1C1C1C; /* Negro suave */
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        /* Espacio para la imagen de banner a la izquierda */
+        .banner {
+            height: 50px; /* Tamaño del header */
+            width: 200px; /* Tamaño del banner */
+            background-color: gray; /* Color de fondo para que se note el espacio */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+
+        /* Contenedor de botones a la derecha */
+        .nav-buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        /* Botones del encabezado */
+        .nav-button {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+            border: 2px solid white;
+            border-radius: 5px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .nav-button:hover {
+            background: white;
+            color: black;
+        }
+
+        /* Secciones */
+        section {
+            padding: 50px 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* Separador entre secciones */
+        .separator {
+            width: 80%;
+            height: 3px;
+            background-color: white;
+            margin: 30px auto;
+            border-radius: 5px;
+        }
+
+        /* Estilos para el footer */
+        footer {
+            background-color: #1C1C1C; /* Negro suave */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #FFD700; /* Color dorado suave */
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado con banner a la izquierda y botones a la derecha -->
+    <header>
+        <div class="banner">[Banner aquí]</div>
+        <div class="nav-buttons">
+            <a href="#sobre-mi" class="nav-button">Sobre Mí</a>
+            <a href="#trabajos" class="nav-button">Trabajos</a>
+        </div>
+    </header>
+
+    <!-- Nuevo texto de introducción -->
+    <section>
+        <h1>Bienvenido a mi Portafolio</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vehicula malesuada ligula, 
+        a fermentum lorem tempor vel. Integer eget purus quis velit varius sodales. Nam eget tristique 
+        lectus, in pulvinar ex.</p>
+    </section>
+
+    <!-- Primer separador -->
+    <div class="separator"></div>
+
+    <!-- Sección "Sobre Mí" con texto de Lorem Ipsum -->
+    <section id="sobre-mi">
+        <h1>Sobre Mí</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vehicula ex eu augue tincidunt, 
+        id convallis odio scelerisque. Cras eget tincidunt nunc. Donec convallis auctor dolor, nec pharetra odio 
+        fermentum ut. Duis gravida libero nec risus consectetur, a interdum lacus porttitor.</p>
+    </section>
+
+    <!-- Separador entre secciones -->
+    <div class="separator"></div>
+
+    <!-- Sección "Trabajos" -->
+    <section id="trabajos">
+        <h1>Mis Trabajos</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula, metus a finibus faucibus, 
+        metus lectus facilisis libero, eu dictum ipsum odio a justo.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Mi Portafolio | <a href="https://github.com/MORD3X_DEV" target="_blank">GitHub</a> | <a href="mailto:correo@example.com">Contacto</a></p>
+    </footer>
+
+</body>
+</html>
